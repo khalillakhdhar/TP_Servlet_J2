@@ -48,7 +48,7 @@ public class Calculeservlet extends HttpServlet {
 		//out.print(c.toString());
 		String result=c.toString();
 		request.setAttribute("resultat",result);
-		request.getRequestDispatcher("index");
+		request.getRequestDispatcher("index").forward(request, response);
 		
 		
 		
