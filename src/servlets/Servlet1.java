@@ -40,6 +40,7 @@ public class Servlet1 extends HttpServlet {
 		HttpSession session=request.getSession();
 		String username=request.getParameter("userName");
 		session.setAttribute("name",username);
+		response.sendRedirect("servlet2");
 	}
 
 }
