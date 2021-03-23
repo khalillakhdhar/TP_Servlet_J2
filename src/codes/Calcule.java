@@ -77,4 +77,16 @@ return multiple/diviseur;
 
 
 }
+
+
+
+
+
+@Override
+public String toString() {
+	return "Calcule [a=" + a + ", b=" + b + ", pgcd=" + pgcd() + ", ppcm=" + ppcm() + "]";
+}
+
+
+
 }
