@@ -14,5 +14,16 @@ valeur2<input type="number" name="b" min="1"> <br>
 
 
 </form>
+<br>
+
+
+<%
+if(!request.getParameter("resultat").equals(null))
+{
+String message=(String) request.getAttribute("resultat");
+out.println(message);
+}
+%>
+
 </body>
 </html>
