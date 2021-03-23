@@ -40,7 +40,7 @@ public class Calculeservlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-		PrintWriter out=response.getWriter();
+		//PrintWriter out=response.getWriter();
 		int a=Integer.parseInt(request.getParameter("a"));
 		int b=Integer.parseInt(request.getParameter("b"));
 		
@@ -48,7 +48,7 @@ public class Calculeservlet extends HttpServlet {
 		//out.print(c.toString());
 		String result=c.toString();
 		request.setAttribute("resultat",result);
-		request.getRequestDispatcher("index").forward(request, response);
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
 		
 		
