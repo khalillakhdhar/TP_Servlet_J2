@@ -45,7 +45,10 @@ public class Calculeservlet extends HttpServlet {
 		int b=Integer.parseInt(request.getParameter("b"));
 		
 		Calcule c=new Calcule(a, b);
-		out.print(c.toString());
+		//out.print(c.toString());
+		String result=c.toString();
+		request.setAttribute("resultat",result);
+		request.getRequestDispatcher("index");
 		
 		
 		
