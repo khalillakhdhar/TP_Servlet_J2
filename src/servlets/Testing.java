@@ -28,6 +28,8 @@ public class Testing extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String name=request.getParameter("name");
+		response.sendRedirect("https://www.google.com/search?q="+name);
 	//	response.sendRedirect("http://www.google.com");
 	}
 
