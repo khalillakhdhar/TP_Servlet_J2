@@ -7,7 +7,7 @@
 <title>Calcule</title>
 </head>
 <body>
-<form>
+<form action="Calculeservlet" method="post">
 valeur1 <input type="number" name="a" min="1"><br>
 valeur2<input type="number" name="b" min="1"> <br>
 <input type="submit" value="calculer">
