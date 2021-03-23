@@ -18,7 +18,7 @@ valeur2<input type="number" name="b" min="1"> <br>
 
 
 <%
-if(request.getParameter("resultat")!=null)
+if(request.getAttribute("resultat")!=null)
 {
 String message=(String) request.getAttribute("resultat");
 out.println(message);
